@@ -47,11 +47,6 @@ public class ArticlesController {
         return "article has been saved";
     }
 
-    // @GetMapping()
-    // public List<Article> getAll(){
-    //     return articleService.findAll();
-    // }
-
     @GetMapping()
     public List<ArticleDTO> getAll(@RequestParam(defaultValue = "0") int page,
                                 @RequestParam(defaultValue = "10") int size
